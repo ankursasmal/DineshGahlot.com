@@ -1,0 +1,426 @@
+@import '../sass/mix';
+@import '../sass/var';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.carouselExampleIndicators1{
+  position: relative;
+     
+}
+
+// navbar part
+  .nav_section{
+         width: 100vw;
+        height: 80px;
+         position: fixed;
+           top: 0px;
+          // align-items: center !important;
+     
+     & .nav_style{
+      background-color: white;
+          padding: 0 7.8vw;
+        display: flex !important;
+        align-items: center !important;
+         justify-content: space-between;
+          & a{
+            font-size: 3vw;
+            font-weight: 450;
+            margin: 1vw 0;
+          }
+        & .nav_style1{
+ 
+            display: flex;
+            align-items: center;
+            
+            & a{
+                font-size: 1.3vw;
+                margin-right: 1vw;
+                color:  $color-main ;
+               
+            }
+
+            
+            & div{
+              display: flex;align-items: center;
+              & span{
+                  padding-right: 1px;   
+                  font-size: 1.3vw;
+                  font-weight: 450;
+                  color:$color-main;
+
+              }
+            }
+             
+        }
+     }
+
+
+    }
+
+ 
+    .nav_section1{
+      width: 100vw;
+     height: 80px;
+      position: sticky;
+        // align-items: center !important;
+  
+  & .nav_style2{
+       margin: 0 7.8vw;
+     display: flex !important;
+     align-items: center !important;
+      justify-content: space-between;
+       & a{
+         font-size: 3vw;
+         font-weight: 450;
+         padding: 1vw 0;
+                color: $color_property;
+         
+       }
+        
+     & .nav_style3{
+
+         display: flex;
+         align-items: center;
+         
+         & a{
+             font-size: 1.3vw;
+             margin-right: 1vw;
+             color: white ;
+
+         }
+         & div{
+           display: flex;
+           align-items: center;
+           & span{
+               padding-right: 1px;   
+               font-size: 1.3vw;
+               font-weight: 450;
+               color: white;
+
+           }
+         }
+          
+     }
+  }
+
+
+ }
+    .carousel_indicators_div{
+      display: flex;flex-direction: column;justify-content: center;align-items: center;  width: 95vw;
+    }
+    .btn_left{
+      margin-top: 76vw;
+      margin-right: 41vw;
+    }
+   
+    .grid_img_property1{
+@include grid_img_property(2vw);
+    }
+
+    #grid_img_property2{
+      @include grid_img_property(.7vw);
+          }
+      
+    #large_text{
+@include grid_img;
+          justify-content: center;  
+       padding: 0 15vw;
+
+       }
+      #curl_text{
+      font-size: 3vw;font-weight: 800 ;margin-bottom: 4vw; text-align: center; 
+      }
+
+.btn1{
+  @include btn_main;
+margin-top: 6vw;
+}
+
+.Testimonial_text{
+  @include flex_colum;
+
+ & a{
+  padding-top: 3%;
+  font-size: 2.7vw;
+  font-weight: 500;
+  }
+  & span{
+    padding-top: 33px
+  }
+
+}
+
+
+#leftSidemove{
+@include grid_img;
+  height: 500px;justify-content: center;   overflow-x: scroll; 
+   
+
+ & div{
+    display: flex; width:100%; padding: 0 1px;  
+  }
+  & #image1{
+    @include small_scroll_carsol(400px,500px);
+  }
+  & #image2 {
+    @include small_scroll_carsol(250px,500px);
+  }
+  & #image3{
+    @include small_scroll_carsol(700px,500px);
+  }
+  & #image4{
+    @include small_scroll_carsol(300px,500px);
+  }
+  & #image5 {
+    @include small_scroll_carsol(900px,500px);
+  }
+  & #image6{
+    @include small_scroll_carsol(500px,500px);
+  }
+  & #image7{
+    @include small_scroll_carsol(1000px,500px);
+  }
+  & #image8 {
+    @include small_scroll_carsol(300px,500px);
+  }
+  & #image9{
+    @include small_scroll_carsol(700px,500px);
+  }& #image10{
+    @include small_scroll_carsol(200px,500px);
+  }
+ 
+}
+
+#leftSidemove::-webkit-scrollbar {
+  display: none;
+}
+
+
+#middle_txt{
+  margin-bottom: 4vw;font-size: 2.5vw;text-align: center;font-family: Montserrat, sans-serif;
+}
+
+.center_flex1{
+
+@include center_flex;
+}
+ 
+#font_width1{
+  font-weight: $font_width;
+}
+    
+    #Pfcific_text{
+      text-align: $text_align;
+    }
+
+.All_img{
+  @include All_image;
+
+}
+#updown_txt{
+  @include All_image;
+margin-bottom: 2vw;
+}
+#Behind_camera_text{
+  display: flex;
+  flex-direction: column;
+     
+   p{
+    font-size: 3.5vw;font-weight: 700; margin: 2.8vw ;line-height: 3.7vw;
+   }
+   span{
+    padding-left: 6vw;
+   }
+
+}
+#txt_2nd{
+  font-size: .9vw ;font-weight: 800; padding-left: 6vw;
+ }
+
+
+.btn_main2{
+  @include btn_main;
+  margin-top: 8vw;
+  margin-left: 6vw;
+   align-self: self-start;
+}
+
+.Davis_text{
+  padding-top: 13vw; margin-top: 3vw;
+  a{
+     font-size: 3.5vw ;font-weight: 800; align-self: center;text-align: center;
+  }
+}
+
+#image_1{
+  @include All_image;
+
+}
+
+
+
+
+
+
+
+       #Testimonial{
+margin-right: auto;      }
+
+    // }
+    // #loremText{
+    //   font-size: 1vw ;padding-top: 12vw;font-weight: 500; line-height: 1.5vw;
+    //    padding-top: 3vw !important; 
+    //   }
+    
+    // @media (max-width:700px) {
+     
+    //   #loremText{
+    //     font-size: 1vw ;padding-top: 12vw;font-weight: 500; line-height: 1.5vw;
+    //      padding-top: 5vw !important; 
+    //     }
+    // }
+
+ 
+     @media (max-width:767px) {
+     
+      #numberofSlide{
+
+        padding-right: 38.3vw !important;
+        padding-top: 2vw !important;        }
+    }
+    
+    @media (max-width:1230px) {
+      #numberofSlide{
+        padding-right: 19.3vw;
+        padding-top: 0vw;
+      }
+      
+
+    }
+ 
+.carousel-control-prev{
+    font-size: 4vw;
+    padding-left: 8vw;
+    width: 50vw !important;
+    margin-bottom: 15vw;
+}
+
+  .img_text{
+    display: flex;
+    flex-direction: column;
+    & p{
+
+        font-size: 4vw;
+        margin-top: 13vw;
+ }
+
+  & .btn_property{
+    padding: 1vw 4vw;
+    font-size: 1.8vw;
+    margin-top: 6vw;
+    background-color: $color-main;
+    color: $color_property;
+    align-self: start;
+ }
+ }
+
+ .carousel-control-next{
+    font-size: 4vw;
+      margin-bottom: 2vw;
+    & span{
+        margin-top: 63vw;
+
+    }
+ }
+
+ .carousel-control-next{
+    font-size: 4vw;
+      margin-bottom: 2vw;
+    & span{
+        margin-top: 63vw;
+
+    }
+ }
+
+
+ #loremText{
+  font-size: 1vw ;padding-top: 12vw;font-weight: 500; line-height: 1.5vw;
+ }
+
+ @media (min-width:980px) {
+
+ .line{
+ 
+    background-color: white;
+     width: 84vw;
+    height: 2px;
+    margin-bottom:3vw;
+ }
+}
+@media (max-width:980px) {
+
+  .line{
+  
+     background-color: white;
+      width: 84vw;
+     height: 1.5px;
+     margin-bottom:1vw;
+  }
+ }
+ @media (max-width:650px) {
+
+  .line{
+  
+     background-color: white;
+      width: 84vw;
+     height: 1px;
+     margin-bottom:0vw;
+  }
+ }
+
+ #full_image{
+ width: 100%; height: 40vw; position: relative;
+ }
+ 
+#img_over_text{
+ position: absolute;align-content: center;color: white;text-align: center;width: 23vw;font-size: 3vw;
+   left: 40vw;
+   margin-top: 13vw;
+}
+
+#arrow1{
+  font-size: 2vw;
+  margin-bottom: 1vw; 
+  & span{
+    margin-top: 33vw;margin-right: 55vw;
+    & i{
+      color: $color-main;
+    }
+  }
+}
+#arrow2{
+  font-size: 2vw;margin-bottom: 1vw; 
+  & span{
+    margin-top: 33vw;margin-right: -2vw;
+    & i{
+     color: black;
+    }
+  }
+}
+
+#number_slide{
+display: flex;align-items: center; justify-content: flex-end !important; 
+
+}
+
+#numberofSlide{
+padding-right: 19.3vw;padding-top: 1.7vw;
+}
+
+
+
+
+
+ 
