@@ -1,44 +1,49 @@
- @mixin center_flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.arrow_size{
-    font-size: 4vw;
-    margin-bottom: 2vw;
-}
- 
-
- @mixin btn_main{
-background-color: black; 
-color: white;
- padding:.4vw 1vw ;
+ @mixin center_flex {
+     display: flex;
+     align-items: center;
+     justify-content: center;
  }
 
- @mixin  grid_img_property($width2){
-    width: 100% ;margin-bottom: 2vw;
-     margin-top:$width2;
-}
- 
-@mixin  All_image{
-width: 100%;
-}
-
-.margin_top{
-    margin-top: 5vw;
-}
+ .arrow_size {
+     font-size: 4vw;
+     margin-bottom: 2vw;
+ }
 
 
-@mixin grid_img{
-    display: flex; align-items:center ;flex-direction: column;
-}
+ @mixin btn_main {
+     background-color: black;
+     color: white;
+     padding: .4vw 1vw;
+ }
 
-@mixin flex_colum{
-    display: flex; 
-    flex-direction: column;
-}
-@mixin small_scroll_carsol($width1,$height1){
-     width:$width1;
-      height: $height1; 
-       margin: 1vw
-}
+ @mixin grid_img_property($width2) {
+     width: 100%;
+     margin-bottom: 2vw;
+     margin-top: $width2;
+ }
+
+ @mixin All_image {
+     width: 100%;
+ }
+
+ .margin_top {
+     margin-top: 5vw;
+ }
+
+
+ @mixin grid_img {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ @mixin flex_colum {
+     display: flex;
+     flex-direction: column;
+ }
+
+ @mixin small_scroll_carsol($width1, $height1) {
+     width: $width1;
+     height: $height1;
+     margin: 1vw
+ }
