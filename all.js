@@ -4,16 +4,13 @@ let hero_section = document.querySelector('.hero_section');
 window.addEventListener('scroll', (e) => {
 
     let scrolled = window.scrollY;
-    console.log("scrolled", scrolled);
-
+ 
     let hero_section_height = hero_section.scrollHeight;
 
-    console.log("fixed height", hero_section_height);
-
+ 
     if (hero_section_height <= scrolled) {
         let nav_section = document.getElementById('ankur');
-        console.log("ok now work");
-        nav_section.style.cssText = "display:block !important"
+         nav_section.style.cssText = "display:block !important"
     }
     else {
         let nav_section = document.getElementById('ankur');
